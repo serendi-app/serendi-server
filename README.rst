@@ -14,4 +14,9 @@ later (AGPL 3+).
 Installation
 ------------
 
+This application uses GeoDjango, please consult the documentation on how to install
+the necessary packages:
+
+https://docs.djangoproject.com/en/1.8/ref/contrib/gis/
+
 TODO
