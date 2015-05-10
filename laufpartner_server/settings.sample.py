@@ -37,3 +37,7 @@ DATABASES = {
     }
 }
 
+# Additional apps, e.g. for development
+INSTALLED_APPS += (
+    #'django_extensions',
+)
