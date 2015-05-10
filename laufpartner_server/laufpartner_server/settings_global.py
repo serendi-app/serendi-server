@@ -32,6 +32,7 @@ INSTALLED_APPS = (
     'django.contrib.gis',
 
     # Project apps
+    'laufpartner_server.core',
 )
 
 MIDDLEWARE_CLASSES = (
