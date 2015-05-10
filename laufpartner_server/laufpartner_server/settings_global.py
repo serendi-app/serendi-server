@@ -45,7 +45,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.security.SecurityMiddleware',
 )
 
-ROOT_URLCONF = 'laufpartner_server.urls'
+ROOT_URLCONF = 'laufpartner_server.laufpartner_server.urls'
 
 TEMPLATES = [
     {
@@ -63,7 +63,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'laufpartner_server.wsgi.application'
+WSGI_APPLICATION = 'laufpartner_server.laufpartner_server.wsgi.application'
 
 
 # Internationalization
