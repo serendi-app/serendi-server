@@ -33,7 +33,7 @@ DEBUG = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.spatialite',
-        'NAME': os.path.join(BASE_DIR, 'database.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'database.sqlite'),
     }
 }
 
