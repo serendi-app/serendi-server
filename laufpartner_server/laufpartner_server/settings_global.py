@@ -31,6 +31,9 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.gis',
 
+    # Django REST framework
+    'rest_framework',
+
     # Project apps
     'laufpartner_server.core',
 )
