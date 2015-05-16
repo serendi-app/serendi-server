@@ -87,7 +87,8 @@ class Profile(models.Model):
     Flag indicating whether the user should be included in searches
     '''
 
-    position = models.PointField(geography=True)
+    position = models.PointField(geography=True,
+                                 null=True)
     '''
     The user's position
     '''
@@ -121,5 +122,5 @@ class Profile(models.Model):
                             choices=TIME,
                             default=TIME_MORNING)
     '''
-    The user's approximate age
+    The user's time for jogging
     '''
