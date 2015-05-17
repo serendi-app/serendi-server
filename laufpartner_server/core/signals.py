@@ -14,4 +14,19 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 
-default_app_config = 'laufpartner_server.core.apps.CoreConfig'
+from django.contrib.auth.models import User
+from django.db.models.signals import post_save
+
+from laufpartner_server.core.models import Profile
+
+
+def create_user_profile(sender, instance, created, **kwargs):
+    '''
+    Every new user gets a profile
+    '''
+    print('aaaaa')
+    if created:
+        Profile.objects.create(user=instance)
+
+
+post_save.connect(create_user_profile, sender=User)

@@ -14,4 +14,13 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 
-default_app_config = 'laufpartner_server.core.apps.CoreConfig'
+
+from django.apps import AppConfig
+
+
+class CoreConfig(AppConfig):
+    name = 'laufpartner_server.core'
+    verbose_name = "Core"
+
+    def ready(self):
+        import laufpartner_server.core.signals
