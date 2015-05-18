@@ -32,8 +32,12 @@ DEBUG = True
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.spatialite',
-        'NAME': os.path.join(BASE_DIR, 'database.sqlite'),
+        'ENGINE': 'django.contrib.gis.db.backends.postgis',
+        'NAME': 'laufpartner',
+        'USER': 'laufpartner',
+        'PASSWORD': 'laufpartner',
+        'PORT': 5432,
+        'HOST': 'localhost'
     }
 }
 
