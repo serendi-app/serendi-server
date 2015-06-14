@@ -1,7 +1,7 @@
-Laufpartner - Server component
+Serendi - Server component
 ==============================
 
-This is the server component for the Laufpartner app.
+This is the server component for the Serendi app.
 
 
 License
